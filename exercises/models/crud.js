@@ -1,13 +1,11 @@
 const User = require('./user')
 
 const getUserById = (id) => {
-  return User.findById(id)
-    .exec()
+  return User.findById(id).exec()
 }
 
 const getAllUsers = () => {
-  return User.find({})
-    .exec()
+  return User.find({}).exec()
 }
 
 const createUser = (userDetails) => {
